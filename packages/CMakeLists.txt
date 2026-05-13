@@ -84,6 +84,7 @@ list(APPEND ep
     libzvbi
     libsixel
     ffmpeg
+    c-ares
     libpsl
     curl
     mpv
