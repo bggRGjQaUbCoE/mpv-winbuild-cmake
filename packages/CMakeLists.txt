@@ -85,10 +85,10 @@ list(APPEND ep
     libsixel
     ffmpeg
     libpsl
+    curl
     mpv
     mpv-release
     mpv-packaging
-    curl
     flac
     opusfile
     libopusenc
