@@ -15,6 +15,7 @@ ExternalProject_Add(mpv
         shaderc
         libplacebo
         spirv-cross
+        curl
     GIT_REPOSITORY https://github.com/mpv-player/mpv.git
     SOURCE_DIR ${SOURCE_LOCATION}
     UPDATE_COMMAND ""
@@ -41,6 +42,7 @@ ExternalProject_Add(mpv
         -Dvulkan=enabled
         -Dvapoursynth=disabled
         ${mpv_gl}
+        -Dlibcurl=enabled
         -Dc_args='-Wno-error=int-conversion'
     BUILD_COMMAND ${EXEC} LTO_JOB=1 PDB=1 ninja -C <BINARY_DIR>
     INSTALL_COMMAND ""
