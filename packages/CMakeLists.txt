@@ -45,6 +45,7 @@ list(APPEND ep
     fontconfig
     libunibreak
     libass
+    subrandr
     libvpl
     amf-headers
     avisynth-headers
