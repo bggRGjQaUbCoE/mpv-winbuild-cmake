@@ -28,7 +28,6 @@ ExternalProject_Add(ffmpeg
         libvpl
         libjxl
         libxml2
-        shaderc
         libplacebo
         dav1d
         openal-soft
@@ -108,7 +107,6 @@ ExternalProject_Add(ffmpeg
         --enable-libsoxr
         --enable-libspeex
         --enable-libmysofa
-        --enable-libshaderc
         --enable-libfribidi
         --enable-libfreetype
 
