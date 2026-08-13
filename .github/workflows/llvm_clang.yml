@@ -10,6 +10,11 @@ on:
         description: 'Run custom command before building'
         required: false
         type: string
+      github_release:
+        description: 'Upload to Github release'
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   build_llvm:
@@ -215,7 +220,7 @@ jobs:
           {
             "ref": "master",
             "inputs": {
-              "github_release": "false",
+              "github_release": ${{ github.event.inputs.github_release }},
               "mpv_tarball": "false"
             }
           }
